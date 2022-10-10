@@ -1,0 +1,15 @@
+header
+{
+    background-color: #1E1E1C;
+    text-align: center;
+}
+
+#header
+{
+    list-style-type: none;
+}
+
+ul#header li {
+    display: inline;
+    color: white;
+}
