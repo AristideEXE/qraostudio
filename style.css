@@ -1,3 +1,17 @@
+.actu{
+    background: url("ressources/actualites/haunted-by-daylight.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.actualites
+{
+    color: white;
+}
+
 header
 {
     background-color: #1E1E1C;
@@ -7,10 +21,9 @@ header
 #header
 {
     list-style-type: none;
-    width: 10px;
 }
 
-ul#header li {
+#header li {
     display: inline;
     padding: 50px;
     color: white;
