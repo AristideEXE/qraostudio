@@ -7,9 +7,18 @@ header
 #header
 {
     list-style-type: none;
+    width: 10px;
 }
 
 ul#header li {
     display: inline;
+    padding: 50px;
     color: white;
+    font-weight: 550;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
 }
