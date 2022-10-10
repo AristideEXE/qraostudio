@@ -9,12 +9,17 @@
 
 .actualites{
     color: white;
+    padding-top: 0;
+}
+
+.main{
+    padding-top: 60px;
 }
 
 header
 {
     background-color: #1E1E1C;
-    text-align: center;
+    height: 60px;
 }
 
 #header
