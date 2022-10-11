@@ -1,10 +1,31 @@
+@media screen and (max-width: 768px) {
+    .textActu{
+        width: 100% !important;
+    }
+  }
+
+.textActu{
+    text-align: center;
+    width: 70%;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+}
+
 .actu{
-    background: url("ressources/actualites/haunted-by-daylight.jpg") no-repeat center center; 
+    background: url("ressources/actualites/haunted-by-daylight-2.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 500px;
+}
+
+.actu img{
+    width: 30%;
 }
 
 .actualites
