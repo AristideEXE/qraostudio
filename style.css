@@ -44,20 +44,28 @@ header
     height: 60px;
 }
 
-#header
+#listHeader
 {
     list-style-type: none;
+    text-align: center;
 }
 
-#header li {
+#listHeader li {
     display: inline;
     padding: 50px;
     color: white;
     font-weight: 550;
+    vertical-align: middle;
 }
 
-a
+#listHeader a
 {
     color: white;
     text-decoration: none;
 }
+
+#listHeader a:hover
+{
+    text-decoration: underline;
+}
+
