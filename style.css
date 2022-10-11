@@ -8,7 +8,6 @@
     text-align: center;
     width: 70%;
     padding: 30px;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(0, 0, 0, .8);
@@ -22,6 +21,12 @@
     -o-background-size: cover;
     background-size: cover;
     height: 500px;
+}
+
+.actu .btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
 }
 
 .actu img{
@@ -52,7 +57,7 @@ header
 
 #listHeader li {
     display: inline;
-    padding: 50px;
+    padding: 35px;
     color: white;
     font-weight: 550;
     vertical-align: middle;
