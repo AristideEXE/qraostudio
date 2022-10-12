@@ -87,3 +87,22 @@ header
     text-decoration: underline;
 }
 
+.Reseaux
+{
+    background-color: #EFEFEF;
+    height: 180px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 25px;
+}
+
+.Reseaux h3
+{
+    padding-bottom: 10px;
+}
+
+#listReseaux li {
+    display: inline;
+    padding: 35px;
+    vertical-align: middle;
+}
