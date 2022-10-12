@@ -52,8 +52,27 @@
     padding-top: 0;
 }
 
-.main{
+#main{
     padding-top: 60px;
+}
+
+#sidebar{
+    left: -75%; 
+    top: 60px ;
+    z-index: 1210;
+}
+
+#sidebar ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar li{
+    padding: 10px;
+}
+
+#sidebar li span{
+    
 }
 
 header
