@@ -67,6 +67,11 @@
     color: white;
 }
 
+#sidebar li:hover
+{
+    background-color: #f7ceb8;
+}
+
 #sidebar li{
     padding: 10px;
 }
