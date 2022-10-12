@@ -2,7 +2,20 @@
     .textActu{
         width: 100% !important;
     }
-  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#sidebar{
+    transition: 0.4s;
+}
+
 
 .textActu{
     text-align: center;

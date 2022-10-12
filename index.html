@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
-    
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="ressources/Qrao logo officel en cercle.png">
@@ -15,17 +15,43 @@
     <title>QRAOSTUDIO</title>
 </head>
 <body>
-    <header class="position-fixed w-100">
-        <ul id="listHeader">
+    <header class="position-fixed w-100" style="z-index: 1200;">
+        <ul id="listHeader" class="d-none d-md-block">
             <li><a href="pageJeux.html">JEUX</a></li>
             <li><a href="pageLogiciels.html">LOGICIELS</a></li>
-            <li><a href="index.html"><img src="ressources/Qrao logo officel en cercle.png" height="60px" width="60px" alt="Logo QRAO"></a></li>
+            <li><a href="#"><img src="ressources/Qrao logo officel en cercle.png" height="60px" width="60px" alt="Logo QRAO"></a></li>
             <li><a href="pageActualités.html">ACTUALITES</a></li>
             <li><a href="pageContacts.html">CONTACTS</a></li>
         </ul>
+        <div class="h-100 d-md-none w-100 d-flex align-items-center">
+            <button onclick="openLeftMenu()" class="text-white bg-transparent border-0 p-3">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <p class="text-white">Qrao Studio</p>
+        </div>
     </header>
     
-    <div class="main">
+    
+    <nav class="position-fixed h-100 bg-success w-75" style="left: -75% ;z-index: 1210;" id="sidebar">
+        <button onclick="closeLeftMenu()" class="bar-item button large">Close &times;</button>
+        <a href="#" class="bar-item button">Link 1</a>
+        <a href="#" class="bar-item button">Link 2</a>
+        <a href="#" class="bar-item button">Link 3</a>
+    </nav>
+
+    <script>
+        function openLeftMenu() {
+            document.getElementById("sidebar").style.left = "0px";
+            document.getElementById("main").style.filter = "brightness(0.5)";
+        }
+
+        function closeLeftMenu() {
+            document.getElementById("sidebar").style.left = "-75%"
+            document.getElementById("main").style.filter = "brightness(1)";
+        }
+    </script>
+
+    <div id="main">
         <div class="carrousel actualites w-100 mt-0">
             <div class="actu">
                 <div class="d-flex h-100 align-items-center">
@@ -44,45 +70,43 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div>
+        <div class="container">
     
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae velit maxime molestiae obcaecati praesentium minima adipisci, tenetur perferendis provident culpa voluptas quis odio a natus, quibusdam recusandae ea voluptatum!
+    
+        </div>
 
     </div>
-
-
-
     
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
