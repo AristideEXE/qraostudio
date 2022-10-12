@@ -2,7 +2,20 @@
     .textActu{
         width: 100% !important;
     }
-  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#sidebar{
+    transition: 0.4s;
+}
+
 
 .textActu{
     text-align: center;
@@ -39,8 +52,27 @@
     padding-top: 0;
 }
 
-.main{
+#main{
     padding-top: 60px;
+}
+
+#sidebar{
+    left: -75%; 
+    top: 60px ;
+    z-index: 1210;
+}
+
+#sidebar ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar li{
+    padding: 10px;
+}
+
+#sidebar li span{
+    
 }
 
 header
