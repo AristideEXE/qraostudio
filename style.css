@@ -36,6 +36,11 @@ body{
     border-radius: 10px;
 }
 
+.textActu h1{
+    text-transform: uppercase;
+    text-shadow: black;
+}
+
 .textActu p{
     text-align: justify;
 }
