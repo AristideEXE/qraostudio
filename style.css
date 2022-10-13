@@ -185,3 +185,8 @@ header
     width: 100%;
   }
 }
+
+.logo{
+    height: 60px;
+    width: 60px;
+}

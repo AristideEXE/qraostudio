@@ -19,7 +19,10 @@
         <ul id="listHeader" class="d-none d-md-block">
             <li><a href="pageJeux.html">Jeux</a></li>
             <li><a href="pageLogiciels.html">Logiciels</a></li>
-            <li><a href="#"><img src="ressources/Qrao logo officel en cercle.png" height="60px" width="60px" alt="Logo QRAO"></a></li>
+            <!-- <li><a href="#"><img src="ressources/Qrao logo officel en cercle.png" height="60px" width="60px" alt="Logo QRAO"></a></li> -->
+            <li><a href="#"><img id="logo" class="logo" src="ressources/Qrao logo officel en cercle.png">
+                <img id="logoGif" style="display: none;" class="logo" src="ressources/qraostudio.gif"></a>
+            </li>
             <li><a href="pageActualités.html">Actualités</a></li>
             <li><a href="pageContacts.html">Contact</a></li>
 
@@ -31,6 +34,20 @@
             <p class="d-inline text-white align-middle" style="font-size: 25px;">Qrao Studio</p>
         </div>
     </header>
+
+    <script>
+        let logo = document.getElementById("logo")
+        let logoGif = document.getElementById("logoGif")
+
+        logo.addEventListener("mouseenter", function(){
+            logo.style.display = "none"
+            logoGif.style.display = "inline"
+            setTimeout(function(){
+                logoGif.style.display = "none"
+                logo.style.display = "inline"
+            }, 1700)
+        })
+    </script>
     
     
     <nav class="position-fixed h-100 bg-dark w-75" id="sidebar">
