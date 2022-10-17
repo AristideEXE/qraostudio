@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
     .textActu{
-        width: 100% !important;
+        width: 75% !important;
+        font-size: small;
     }
 }
 
@@ -42,11 +43,24 @@ body{
 }
 
 .actu{
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    /* background-attachment: fixed !important; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 500px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    /* padding: 10px; */
+    /* background-color: rgba(0, 0, 0, .8); */
+    /* border-radius: 9999px; */
+}
+
+.carousel-indicators{
+    margin-bottom: 0px;
 }
 
 .btn{
@@ -172,4 +186,9 @@ header
     right: auto;
     width: 100%;
   }
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
 }
